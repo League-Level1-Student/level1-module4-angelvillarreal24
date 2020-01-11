@@ -112,7 +112,9 @@ public class Jeopardy implements ActionListener {
 
 		JButton buttonPressed = (JButton) e.getSource();
 		// If the buttonPressed was the firstButton
-
+		if(e.getSource()==firstButton){
+			askQuestion("Obama?","yes",600);
+		}
 			// Call the askQuestion() method
  
 		// Complete the code in the askQuestion() method. When you play the game, the score should change.
@@ -128,12 +130,17 @@ public class Jeopardy implements ActionListener {
 	private void askQuestion(String question, String correctAnswer, int prizeMoney) {
 		
 		// Use the playJeopardyTheme() method to play music while the use thinks of an answer
-		
+			playJeopardyTheme();
 		// Remove this temporary message and replace it with a pop-up that asks the user the question
-		JOptionPane.showMessageDialog(null, "this is where the question will be asked");
+		String answer = JOptionPane.showInputDialog(question);
 		
 		// Stop the theme music when they have entered their response. Hint: use the sound variable 
-		
+
+		if(answer.equals(correctAnswer)){
+
+			score+=prizeMoney;
+			JOptionPane.showMessageDialog(null,"Yes, you are correct!");
+		}
 		// If the answer is correct
 
 			// Increase the score by the prizeMoney
