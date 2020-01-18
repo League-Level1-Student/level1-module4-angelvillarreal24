@@ -136,12 +136,19 @@ public class Jeopardy implements ActionListener {
 		
 		// Stop the theme music when they have entered their response. Hint: use the sound variable 
 
-		if(answer.equals(correctAnswer)){
-
-			score+=prizeMoney;
-			JOptionPane.showMessageDialog(null,"Yes, you are correct!");
+		if(answer.equalsIgnoreCase(correctAnswer)) {
+			sound.stop();
+			score += prizeMoney;
+			JOptionPane.showMessageDialog(null, "Yes, you are correct!");
 		}
-		// If the answer is correct
+		else {
+			sound.stop();
+			score -= prizeMoney;
+			JOptionPane.showMessageDialog(null,"No, you are not correct! The correct answer is " + correctAnswer);
+
+		}
+		updateScore();
+			// If the answer is correct
 
 			// Increase the score by the prizeMoney
 
