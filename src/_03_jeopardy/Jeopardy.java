@@ -34,7 +34,9 @@ import javax.swing.JPanel;
 public class Jeopardy implements ActionListener {
 	private JButton firstButton;
 	private JButton secondButton;
-	private JButton thirdButton, fourthButton;
+	private JButton thirdButton;
+	private JButton fourthButton;
+	private JButton fifthButton;
 	private JPanel quizPanel;
 	private int score = 0;
 	private JLabel scoreBox = new JLabel("0");
@@ -66,19 +68,29 @@ public class Jeopardy implements ActionListener {
 		quizPanel.add(firstButton);
 		// 8. Write the code to complete the createButton() method below. Check that your
 		// game looks like Figure 1 in the Jeopardy Handout - http://bit.ly/1bvnvd4.
-		
+
 		// 9. Use the secondButton variable to hold a button using the createButton
 		// method
 		secondButton = createButton("400");
-		// 10. Add the secondButton to the quizPanel
+		thirdButton = createButton("600");
+		fourthButton = createButton("800");
+		fifthButton = createButton("1000");
 		quizPanel.add(secondButton);
+		quizPanel.add(thirdButton);
+		quizPanel.add(fourthButton);
+		quizPanel.add(fifthButton);
+		// 10. Add the secondButton to the quizPanel
+
 		// 11. Add action listeners to the buttons (2 lines of code)
 		firstButton.addActionListener(this);
 		secondButton.addActionListener(this);
+		thirdButton.addActionListener(this);
+		fourthButton.addActionListener(this);
+		fifthButton.addActionListener(this);
 		// 12. Write the code to complete the actionPerformed() method below
 
 		// 13. Add buttons so that you have $200, $400, $600, $800 and $1000 questions
-		
+
 		 /*
 		 * [optional] Use the showImage or playSound methods when the user answers a
 		 * question
@@ -108,12 +120,28 @@ public class Jeopardy implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		
 		// Remove this temporary message after testing:
-		JOptionPane.showMessageDialog(null, "pressed " + ((JButton) e.getSource()).getText() + " button");
 
 		JButton buttonPressed = (JButton) e.getSource();
 		// If the buttonPressed was the firstButton
 		if(e.getSource()==firstButton){
-			askQuestion("Obama?","yes",600);
+			askQuestion("What is Obama's last name?","Barrack",200);
+			firstButton.setText("");
+		}
+		else if (e.getSource()==secondButton){
+			askQuestion("Who was the lamb in Mary had a little lamb?","Jesus",400);
+			secondButton.setText("");
+		}
+		else if (e.getSource()==thirdButton){
+			askQuestion("Who is the creator of the game, Minecraft","Markus Persson",600);
+			thirdButton.setText("");
+		}
+		else if (e.getSource()==fourthButton){
+			askQuestion("When you create a new class without importing anything, what is the first word?","Public",800);
+			fourthButton.setText("");
+		}
+		else if (e.getSource()==fifthButton){
+			askQuestion("Why did the chicken cross the road?","to get to the other side",1000);
+			fifthButton.setText("");
 		}
 			// Call the askQuestion() method
  
