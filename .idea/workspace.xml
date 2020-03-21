@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9664654a-ad33-4143-9e2c-95b5ab1c867a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/_07_fortune_teller/fortune-teller.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_06_book_of_illusions/BookOfIllusions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_06_book_of_illusions/BookOfIllusions.java" afterDir="false" />
-    </list>
+    <list default="true" id="c9d17f4f-b1df-4396-a16a-e4c4f0d193c7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,16 +11,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1YoNeNF8DMnEHaVccLOFTb4g9Kk" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1ZRpK51jxT9OkYpqJKXNPX0Umgv" />
   <component name="PropertiesComponent">
-    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/_07_fortune_teller" />
+      <recent name="C:\Users\Angel\Desktop\level1-module4-angelvillarreal24\src\_07_fortune_teller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -40,12 +33,12 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="BookOfIllusionsRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_06_book_of_illusions.BookOfIllusionsRunner" />
+    <configuration name="FortuneTellerRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_07_fortune_teller.FortuneTellerRunner" />
       <module name="level1-module4-angelvillarreal24" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_06_book_of_illusions.*" />
+          <option name="PATTERN" value="_07_fortune_teller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -55,7 +48,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BookOfIllusionsRunner" />
+        <item itemvalue="Application.FortuneTellerRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -64,11 +57,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9664654a-ad33-4143-9e2c-95b5ab1c867a" name="Default Changelist" comment="" />
-      <created>1583605081900</created>
+      <changelist id="c9d17f4f-b1df-4396-a16a-e4c4f0d193c7" name="Default Changelist" comment="" />
+      <created>1584811693871</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1583605081900</updated>
+      <updated>1584811693871</updated>
     </task>
     <servers />
   </component>
@@ -82,16 +75,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/_06_book_of_illusions/BookOfIllusionsRunner.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
