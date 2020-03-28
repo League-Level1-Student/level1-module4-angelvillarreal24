@@ -5,27 +5,16 @@ package _07_fortune_teller;
  *    Level 1
  */
 
-import java.applet.AudioClip;
-import java.awt.Dimension;
-import java.awt.Graphics;
+import javax.imageio.ImageIO;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
-import java.util.Random;
-
-import javax.imageio.ImageIO;
-import javax.swing.JApplet;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
 
 public class FortuneTeller extends JPanel implements Runnable, MouseListener {
 
-    JFrame frame = new JFrame();
-
-    int frameWidth = 500;
-    int frameHeight = 500;
+    private JFrame frame = new JFrame();
 
     FortuneTeller() throws Exception {
    	 // 1. Choose an image for your fortune teller and put it in your default package
@@ -54,11 +43,12 @@ public class FortuneTeller extends JPanel implements Runnable, MouseListener {
    		 // 8. Get the user to enter a question for the fortune teller
         String question = JOptionPane.showInputDialog("ask a question");
    		 // 9. Find a spooky sound and put it in your default package (freesound.org)
-   		 AudioClip sound = JApplet.newAudioClip(getClass().getResource("SpookySound.wav"));
+   		 //AudioClip sound = JApplet.newAudioClip(getClass().getResource("Spooky Sound.wav"));
    		 // 10. Play the sound
-            sound.play();
+         //   sound.play();
+         System.out.println("ooooo, SPOOKY!");
    		 // 11. Use the pause() method below to wait until your music has finished
-
+         //   pause(123);
    		 // 12. Insert your completed Magic 8 ball code here
 
    	 }
@@ -78,15 +68,17 @@ public class FortuneTeller extends JPanel implements Runnable, MouseListener {
     }
     
     /**************** don't worry about the stuff under here *******************/
-    
-    BufferedImage fortuneTellerImage;
+
+    private BufferedImage fortuneTellerImage;
 
 
 
     @Override
     public void run() {
    	 frame.add(this);
-   	 setPreferredSize(new Dimension(frameWidth, frameHeight));
+        int frameWidth = 500;
+        int frameHeight = 500;
+        setPreferredSize(new Dimension(frameWidth, frameHeight));
    	 frame.pack();
    	 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
    	 frame.setResizable(false);
