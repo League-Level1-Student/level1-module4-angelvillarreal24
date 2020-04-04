@@ -1,32 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9d17f4f-b1df-4396-a16a-e4c4f0d193c7" name="Default Changelist" comment="" />
+    <list default="true" id="9b5d2b4c-6d58-46bf-9d44-b9e849f76e46" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1ZRpK51jxT9OkYpqJKXNPX0Umgv" />
-  <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Angel\Desktop\level1-module4-angelvillarreal24\src\_07_fortune_teller" />
-    </key>
-  </component>
+  <component name="ProjectId" id="1a5KTbWv8lqUBbShosTyJ21ZG5z" />
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -39,36 +24,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="FortuneTellerRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_07_fortune_teller.FortuneTellerRunner" />
-      <module name="level1-module4-angelvillarreal24" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_07_fortune_teller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.FortuneTellerRunner" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c9d17f4f-b1df-4396-a16a-e4c4f0d193c7" name="Default Changelist" comment="" />
-      <created>1584811693871</created>
+      <changelist id="9b5d2b4c-6d58-46bf-9d44-b9e849f76e46" name="Default Changelist" comment="" />
+      <created>1586020025143</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1584811693871</updated>
+      <updated>1586020025143</updated>
     </task>
     <servers />
   </component>
@@ -77,9 +42,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>

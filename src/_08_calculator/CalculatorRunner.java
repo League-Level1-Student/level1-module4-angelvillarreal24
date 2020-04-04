@@ -4,6 +4,7 @@ import javax.swing.*;
 
 public class CalculatorRunner {
     public static void main(String[] args) {
-        createUI();
+        Calculator cal = new Calculator();
+        cal.createUI();
     }
 }
