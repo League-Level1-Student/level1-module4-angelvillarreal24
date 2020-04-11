@@ -13,21 +13,29 @@ public class Calculator implements ActionListener {
 
     JFrame frame = new JFrame();
     JPanel panel = new JPanel();
-    JButton multiply = new JButton();
-    JButton add = new JButton();
-    JButton divide = new JButton();
-    JButton subtract = new JButton();
-    JTextField input1 = new JTextField();
-    JTextField input2 = new JTextField();
+    JButton multiply = new JButton("multiply");
+    JButton add = new JButton("add");
+    JButton divide = new JButton("divide");
+    JButton subtract = new JButton("subtract");
+    JTextField input1 = new JTextField(20);
+    JTextField input2 = new JTextField(20);
 
     public void createUI(){
 
+    frame.setSize(500,500);
+    frame.setVisible(true);
     frame.add(panel);
+    add.setSize(50,40);
     panel.add(multiply);
     panel.add(add);
     panel.add(divide);
     panel.add(subtract);
-    frame.pack();
+    panel.add(input1);
+    panel.add(input2);
+
+
+
+
 
 
     add.addActionListener(this);
@@ -36,33 +44,50 @@ public class Calculator implements ActionListener {
     subtract.addActionListener(this);
     }
 
-    public int add(){
-    finalNumber = input1+=input2;
-
-
+    public int add(int numberOne, int numberTwo){
+        finalNumber = numberOne += numberTwo;
+        return finalNumber;
     }
     public int subtract(){
 
+        return finalNumber;
     }
     public int multiply(){
 
+        return finalNumber;
     }
     public int divide(){
 
+        return finalNumber;
     }
 
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
         if(actionEvent.getSource() == add){
-        numOne = Integer.parseInt(input1);
+            String addTextOne = input1.getText();
+            String addTextTwo = input2.getText();
+            int addIntOne = Integer.parseInt(addTextOne);
+            int addIntTwo = Integer.parseInt(addTextTwo);
+            int addDisplayNumber = add(addIntOne, addIntTwo);
+            JOptionPane.showMessageDialog(null, addDisplayNumber);
+
         }
         else if(actionEvent.getSource() == subtract){
+            String subTextOne = input1.getText();
+            String subTextTwo = input2.getText();
+
 
         }
         else if(actionEvent.getSource() == multiply){
+            String mulTextOne = input1.getText();
+            String mulTextTwo = input2.getText();
+
 
         }
         else if(actionEvent.getSource() == divide){
+            String divTextOne = input1.getText();
+            String divTextTwo = input2.getText();
+
 
         }
 
