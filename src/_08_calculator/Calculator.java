@@ -10,6 +10,7 @@ public class Calculator implements ActionListener {
     int numOne;
     int numTwo;
     int finalNumber;
+    double finalNumberdouble;
 
     JFrame frame = new JFrame();
     JPanel panel = new JPanel();
@@ -33,11 +34,6 @@ public class Calculator implements ActionListener {
     panel.add(input1);
     panel.add(input2);
 
-
-
-
-
-
     add.addActionListener(this);
     multiply.addActionListener(this);
     divide.addActionListener(this);
@@ -48,17 +44,17 @@ public class Calculator implements ActionListener {
         finalNumber = numberOne += numberTwo;
         return finalNumber;
     }
-    public int subtract(){
-
+    public int subtract(int numberOne, int numberTwo){
+        finalNumber = numberOne -= numberTwo;
         return finalNumber;
     }
-    public int multiply(){
-
-        return finalNumber;
+    public double multiply(double numberOne, double numberTwo){
+        finalNumberdouble = numberOne *= numberTwo;
+        return finalNumberdouble;
     }
-    public int divide(){
-
-        return finalNumber;
+    public double divide(double numberOne, double numberTwo){
+        finalNumberdouble = numberOne /= numberTwo;
+        return finalNumberdouble;
     }
 
     @Override
@@ -75,19 +71,28 @@ public class Calculator implements ActionListener {
         else if(actionEvent.getSource() == subtract){
             String subTextOne = input1.getText();
             String subTextTwo = input2.getText();
-
+            int subIntOne = Integer.parseInt(subTextOne);
+            int subIntTwo = Integer.parseInt(subTextTwo);
+            int subDisplayNumber = subtract(subIntOne, subIntTwo);
+            JOptionPane.showMessageDialog(null, subDisplayNumber);
 
         }
         else if(actionEvent.getSource() == multiply){
             String mulTextOne = input1.getText();
             String mulTextTwo = input2.getText();
-
+            int mulIntOne = Integer.parseInt(mulTextOne);
+            int mulIntTwo = Integer.parseInt(mulTextTwo);
+            double mulDisplayNumber = multiply(mulIntOne, mulIntTwo);
+            JOptionPane.showMessageDialog(null, mulDisplayNumber);
 
         }
         else if(actionEvent.getSource() == divide){
             String divTextOne = input1.getText();
             String divTextTwo = input2.getText();
-
+            int divIntOne = Integer.parseInt(divTextOne);
+            int divIntTwo = Integer.parseInt(divTextTwo);
+            double divDisplayNumber = divide(divIntOne, divIntTwo);
+            JOptionPane.showMessageDialog(null, divDisplayNumber);
 
         }
 
