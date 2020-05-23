@@ -26,6 +26,6 @@ public class LatestTweet implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
         System.out.println("tweet tweet");
-        JOptionPane.showMessageDialog(null, );
+        JOptionPane.showMessageDialog(null, "asdnasd" );
     }
 }
