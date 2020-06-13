@@ -1,38 +1,50 @@
 package _11_whack_a_mole;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
 
 public class WhackAMole implements ActionListener {
-    int howManyTimes = 24;
-    int randomNumber;
-    JFrame frame = new JFrame();
-    JPanel panel = new JPanel();
+    private JFrame frame = new JFrame();
+    private JPanel panel = new JPanel();
+    String mole = "MOLE!";
+    Random randy = new Random();
 
-    public void createUI() {
+    void createUI() {
         frame.add(panel);
         frame.setVisible(true);
         frame.setSize(400,500);
-        Random randy = new Random();
-        for (int i = 0; i <= 24; i++) {
-            randomNumber = randy.nextInt(25);
-            drawButton(randomNumber);
-        }
+        panel.setLayout(new GridLayout(8, 3));
+        int randomNumber = randy.nextInt(24);
+        drawButtons(randomNumber);
     }
 
-    void drawButton(int count){
-        JButton randyButton = new JButton();
-        panel.add(randyButton);
-        randyButton.setSize(50,20);
-        if(randomNumber == 14){
-            randyButton.setText("MOLE!");
+    private void drawButtons(int count){
+
+        for (int i = 0; i <= 23; i++) {
+            JButton randyButton = new JButton();
+            randyButton.setSize(50,20);
+            panel.add(randyButton);
+            if(count == i){
+                randyButton.setText(mole);
+            }
         }
+
+
+
     }
 
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
+        JButton buttonClicked = (JButton) actionEvent.getSource();
+        if(buttonClicked.getText().equals(mole)){
 
+            System.out.println("Got It!");
+            int randomNumber = randy.nextInt(24);
+            drawButtons(randomNumber);
+        }
+        else if()
     }
 }
