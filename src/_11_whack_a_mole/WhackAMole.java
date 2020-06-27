@@ -12,6 +12,8 @@ public class WhackAMole implements ActionListener {
     String mole = "MOLE!";
     Random randy = new Random();
     JButton randyButton;
+    int count;
+    int missCount;
 
     void createUI() {
         frame.add(panel);
@@ -50,11 +52,27 @@ public class WhackAMole implements ActionListener {
         }
         else if(buttonClicked.getText().isBlank()){
             panel.removeAll();
-            System.out.println("Not It!");
+            speak("bruh you missed");
             int randomNumber = randy.nextInt(24);
             drawButtons(randomNumber);
         }
         frame.pack();
         frame.setSize(400,500);
+    }
+
+    void speak(String words) {
+        try {
+            System.out.println(words);
+            //Runtime.getRuntime().exec("say " + words).waitFor();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void endGame(Date timeAtStart, int molesWhacked) {
+        Date timeAtEnd = new Date();
+        JOptionPane.showMessageDialog(null, "Your whack rate is "
+                + ((timeAtEnd.getTime() - timeAtStart.getTime()) / 1000.00 / molesWhacked)
+                + " moles per second.");
     }
 }
