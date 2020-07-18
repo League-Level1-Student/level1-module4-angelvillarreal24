@@ -24,6 +24,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Angel\Desktop\level1-module4-angelvillarreal24\src\_12_slot_machine" />
       <recent name="C:\Users\Angel\Desktop\level1-module4-angelvillarreal24\src\_11_whack_a_mole" />
     </key>
   </component>
@@ -39,7 +40,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ARunningMole">
+  <component name="RunManager" selected="Application.RunningMachine">
     <configuration name="APigOnTheRun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_10_pig_latin.APigOnTheRun" />
       <module name="level1-module4-angelvillarreal24" />
@@ -92,8 +93,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RunningMachine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_12_slot_machine.RunningMachine" />
+      <module name="level1-module4-angelvillarreal24" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_12_slot_machine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RunningMachine" />
         <item itemvalue="Application.ARunningMole" />
         <item itemvalue="Application.APigOnTheRun" />
         <item itemvalue="Application.LatestRunner" />
